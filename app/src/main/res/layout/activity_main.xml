@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="57dp"
+        android:layout_height="21dp"
+        android:layout_marginBottom="345dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="51dp"
+        android:text="Englisch:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/englisch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/deutsch"
+        android:layout_width="215dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/englisch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/addVokabel"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <Button
+        android:id="@+id/addVokabel"
+        android:layout_width="175dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="15dp"
+        android:text="Vokabel Hinzufügen"
+        app:layout_constraintBottom_toTopOf="@+id/deutsch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline" />
+
+    <EditText
+        android:id="@+id/englisch"
+        android:layout_width="215dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="79dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/liste"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/deutsch" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="-149dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="56dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="90dp"
+        android:text="Deutsch:"
+        app:layout_constraintEnd_toStartOf="@+id/deutsch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline" />
+
+    <Button
+        android:id="@+id/trainer"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="121dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="24dp"
+        android:text="Trainer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/liste" />
+
+    <Button
+        android:id="@+id/liste"
+        android:layout_width="122dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="79dp"
+        android:text="Vokabelliste"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/englisch" />
+
+</android.support.constraint.ConstraintLayout>
